@@ -40,10 +40,10 @@ function createWindow() {
   mainWindow.setTitle('Pokeidle');
 
   // Check if we've already downloaded the data, otherwise load our loading screen
-  if (fs.existsSync(`https://pokeidle.net/#`)) {
-    mainWindow.loadURL(`https://pokeidle.net/#`);
+  if (fs.existsSync(`https://richardpaulastley.github.io/PHC/`)) {
+    mainWindow.loadURL(`https://richardpaulastley.github.io/PHC/`);
   } else {
-    mainWindow.loadURL(`https://pokeidle.net/#`);
+    mainWindow.loadURL(`https://richardpaulastley.github.io/PHC/`);
   }
 
   mainWindow.on('close', (event) => {
@@ -60,7 +60,7 @@ function createWindow() {
 function createSecondaryWindow() {
   let newWindow = new BrowserWindow({
     titleBarStyle: 'default',
-    "icon": "/build/Pokeidle.png",
+    "icon": "/build/phc.png",
     minWidth: 300,
     minHeight: 200,
     webPreferences: {
@@ -70,13 +70,13 @@ function createSecondaryWindow() {
   });
 
   newWindow.setMenuBarVisibility(false);
-  newWindow.setTitle('Pokeidle');
+  newWindow.setTitle('PHC');
 
   // Check if we've already downloaded the data, otherwise load our loading screen
-  if (fs.existsSync(`https://pokeidle.net/#`)) {
-    newWindow.loadURL(`https://pokeidle.net/#`);
+  if (fs.existsSync(`https://richardpaulastley.github.io/PHC/`)) {
+    newWindow.loadURL(`https://richardpaulastley.github.io/PHC/`);
   } else {
-    newWindow.loadURL(`https://pokeidle.net/#`);
+    newWindow.loadURL(`https://richardpaulastley.github.io/PHC/`);
   }
 
   newWindow.on('close', (event) => {
